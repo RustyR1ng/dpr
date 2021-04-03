@@ -1,0 +1,13 @@
+extends common/layout
+include ./includes/mixins/main-banner
+
+block main-banner
+	+main-banner("Скачать документы", "для записи на курсы ДПО")
+
+block content
+	main.content
+		article
+			h3 Документы
+			p Здесь можно скачать документы, необходмые для записи на курс
+			|
+			strong #[a(href="zayavlenie.docx") Бланк заявления]

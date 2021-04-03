@@ -1,0 +1,20 @@
+extends common/layout
+include includes/contacts/mixins/contact
+include includes/mixins/main-banner
+
+block main-banner
+	+main-banner("Наши контакты")
+
+block content
+	main.content
+		article
+		h3 Контакты
+		each contact in [{ whois: 'Заведующий кафедрой', name: 'Андреев Степан Николаевич', tel: { tel: '8 (495) 223-05-23', dop: '3140' }}, { whois: 'Делопроизводитель', name: 'Свиридова Анна Владимировна', tel: { tel: '8 (495) 223-05-23', dop: '3140' }}]
+			+contact(contact.whois, contact.name, contact.tel.tel, contact.tel.dop)
+		section.contact(aria-label="address")
+			h4 Адрес
+			address.contact__address Адрес: г. Москва, ул. Павла Корчагина, д.22, ауд. ПК441
+			a.contact__mail(href="mailto:km@mospolytech.ru") km@mospolytech.ru
+		article
+			h4 Часы работы
+			p ПН-ПТ 09:30–18:30

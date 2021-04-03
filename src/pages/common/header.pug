@@ -1,0 +1,7 @@
+header.header
+	img.header__logo(src="img/polytech_logo.png", alt="logo")
+	nav.header__nav
+		ul.header__ul
+			each text, link in {"/":"Главная", "http://kafvm.ru/":"Сайт кафедры","programs.html":"Программы повышения квалификации", "docs.html":"Документы", "contacts.html":"Контакты"}
+				li.header__li: a(href=link)= text
+	block main-banner

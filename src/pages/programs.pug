@@ -1,0 +1,9 @@
+extends common/layout
+include includes/mixins/main-banner
+
+block main-banner
+	+main-banner("Программы подготовки", 'по направлениям ДПО кафедры "Математика"')
+
+block content
+	main.content
+		include ./includes/programs/article

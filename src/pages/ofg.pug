@@ -1,0 +1,9 @@
+extends common/layout
+include includes/mixins/main-banner
+
+block main-banner
+	+main-banner("Программы подготовки", "Математические основы финансовой грамотности")
+
+block content
+	main.content
+		include ./includes/ofg/article

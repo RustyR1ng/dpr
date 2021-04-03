@@ -1,0 +1,6 @@
+include ../mixins/lists
+article
+	h3 Наши программы
+	ul.banners
+		each item in [{'link': 'ofg.html', 'img': {'src':'OFG.jpg', 'alt': 'OFG'}},  {'link': 'moiad.html', 'img': {'src':'MOIAD.jpg', 'alt': 'MOIAD'}}, {'link': 'ti.html', 'img': {'src':'TI.jpg', 'alt': 'TI'}}]
+			li.banners__item: +link_img(item.link, item.img.src, item.img.alt)

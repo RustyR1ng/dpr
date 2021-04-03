@@ -1,0 +1,9 @@
+extends common/layout
+include includes/mixins/main-banner
+
+block main-banner
+	+main-banner("Программы подготовки", "Машинное обучение и анализ данных")
+
+block content
+	main.content
+		include ./includes/moiad/article

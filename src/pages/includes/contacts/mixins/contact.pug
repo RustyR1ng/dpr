@@ -1,0 +1,6 @@
+mixin contact(whois, name, tel, dop)
+	- var regex = new RegExp('\\D', 'g');
+	- var tel_href = ('' + tel).replace(regex, '');
+	section.contact
+		p.contact__whois #[strong= whois]: #{name}
+		p.contact__tel Телефон: #[a(href='tel:' + tel_href) #{tel} #[span доб.#{dop}]]
