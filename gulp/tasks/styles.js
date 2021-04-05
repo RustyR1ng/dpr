@@ -7,6 +7,7 @@ const shorthand = require('gulp-shorthand');
 const autoprefixer = require('gulp-autoprefixer');
 const gulpStylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
+const postcss = require('gulp-postcss');
 
 module.exports = function styles() {
 	return gulp
@@ -25,6 +26,13 @@ module.exports = function styles() {
 		)
 		.pipe(sourcemaps.init())
 		.pipe(sass())
+		.pipe(
+			postcss(
+				require('postcss-font-magician')({
+					hosted: ['/src/fonts/**']
+				})
+			)
+		)
 		.pipe(
 			autoprefixer({
 				cascade: false
