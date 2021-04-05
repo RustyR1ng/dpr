@@ -1,6 +1,8 @@
 header.header
-	img.header__logo(src="img/polytech_logo.png", alt="logo")
 	nav.header__nav
+		a.header__logo(href="https://new.mospolytech.ru/"): img(src="img/polytech_logo.png", alt="logo")
+		button.header__switcher
+
 		ul.header__ul
 			each text, link in {"/":"Главная", "http://kafvm.ru/":"Сайт кафедры","programs.html":"Программы повышения квалификации", "docs.html":"Документы", "contacts.html":"Контакты"}
 				li.header__li: a(href=link)= text
