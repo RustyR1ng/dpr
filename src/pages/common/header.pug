@@ -4,6 +4,6 @@ header.header
 		button.header__switcher
 
 		ul.header__ul
-			each text, link in {"/":"Главная", "http://kafvm.ru/":"Сайт кафедры","programs.html":"Программы повышения квалификации", "docs.html":"Документы", "contacts.html":"Контакты"}
+			each text, link in {"./index.html":"Главная", "http://kafvm.ru/":"Сайт кафедры","./programs.html":"Программы повышения квалификации", "./docs.html":"Документы", "./contacts.html":"Контакты"}
 				li.header__li: a(href=link)= text
 	block main-banner
