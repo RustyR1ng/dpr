@@ -9,6 +9,19 @@
 	"useTabs": true,
 	"overrides": [
 		{
+			"files": "*.scss",
+			"options": {
+				"singleQuote": false
+			}
+		},
+		{
+			"files": "*.js",
+			"options": {
+				"useTabs": false,
+				"semi": false
+			}
+		},
+		{
 			"files": "*.md",
 			"options": {
 				"tabWidth": 2,
