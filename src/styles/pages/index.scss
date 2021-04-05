@@ -1,0 +1,33 @@
+.banners {
+
+    @include media-tablet() {
+        flex-direction: row;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+
+    .banners__item {
+        display: inline-block;
+        overflow: hidden;
+
+        img {
+            transition: 0.5s;
+        }
+
+        a {
+            display: flex;
+        }
+
+        a:hover,
+        a:focus {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
