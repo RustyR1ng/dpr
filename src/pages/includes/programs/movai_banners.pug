@@ -1,0 +1,5 @@
+include ../mixins/lists
+
+ul.banners
+	each item in [{'link': '', 'img': {'src':'mov1.jpg', 'alt': 'mov1'}},  {'link': '', 'img': {'src':'mov2.jpg', 'alt': 'mov2'}}, {'link': '', 'img': {'src':'mov3.jpg', 'alt': 'mov3'}}]
+		li.banners__item: +link_img(item.link, item.img.src, item.img.alt)
