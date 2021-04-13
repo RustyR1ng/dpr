@@ -5,71 +5,71 @@
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html {
-    font-size: 16px;
-    box-sizing: border-box;
+	font-size: 16px;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Gilroy";
-    font-weight: normal;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+	font-family: "Gilroy";
+	font-weight: normal;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .content {
-    padding: $padding-vertical $padding-content;
+	padding: $padding-vertical $padding-content;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: $accent;
+	text-decoration: none;
+	color: $accent;
 
-    &:hover {
-        text-decoration: underline;
-    }
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 h1 {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 h2 {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 h4 {
-    font-size: 1.1rem;
+	font-size: 1.1rem;
 }
 
 button {
-    border: 0;
+	border: 0;
 }
 
 a.btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid $accent;
-    border-radius: 10px;
-    text-align: center;
-    transition: background-color 0.2s, color 0.2s;
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border: 1px solid $accent;
+	border-radius: 10px;
+	text-align: center;
+	transition: background-color 0.2s, color 0.2s;
 
-    &:hover {
-        background-color: $accent;
-        color: #ffffff;
-    }
+	&:hover {
+		background-color: $accent;
+		color: #ffffff;
+	}
 }

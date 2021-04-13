@@ -1,33 +1,32 @@
 .banners {
+	@include media-tablet() {
+		flex-direction: row;
+	}
 
-    @include media-tablet() {
-        flex-direction: row;
-    }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
+	.banners__item {
+		display: inline-block;
+		overflow: hidden;
 
-    .banners__item {
-        display: inline-block;
-        overflow: hidden;
+		img {
+			transition: 0.5s;
+		}
 
-        img {
-            transition: 0.5s;
-        }
+		a {
+			display: flex;
+		}
 
-        a {
-            display: flex;
-        }
-
-        a:hover,
-        a:focus {
-            img {
-                transform: scale(1.2);
-            }
-        }
-    }
+		a:hover,
+		a:focus {
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
 }
